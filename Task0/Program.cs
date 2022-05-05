@@ -1,27 +1,18 @@
-﻿///2. Напишите программу, которая будет выдавать 
-///название дня недели по заданному номеру.
-//3 -> Среда 
-///5 -> Пятница
+﻿///2. 1. Напишите программу, которая на вход принимает два 
+//числа и проверяет, является ли первое число квадратом 
+//второго.
 
-Console.Write("Введите целое число a");
+Console.Write("Введите целое число 1 ->");
 int num1 = int.Parse(Console.ReadLine());
-Console.Write("Введите целое число b");
+Console.Write("Введите целое число 2 ->");
 int num2 = int.Parse(Console.ReadLine());
-///Console.Write("Квадрат числа равен -");
-int numResult = num1 * num1;
-if (numResult == num2)
-{
-Console.Write("Yes");
-}
-else
-{
-Console.Write("No");
-}
+bool result = num2 * num2 == num1;
+Console.WriteLine(result ? "Yes" : "No");
 
 
 
 
-Console.ReadKey();
+
 
 
 
